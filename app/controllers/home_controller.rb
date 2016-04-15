@@ -8,7 +8,7 @@ class HomeController < ApplicationController
 	def search
 		codes = params[:search]
 		@results = Finra.search(codes)
-		# @results = Finra.to_csv(@results[0])
+		@results = Finra.to_csv(@results[0])
 		# binding.pry
 		respond_to do |format|
   			format.js 
