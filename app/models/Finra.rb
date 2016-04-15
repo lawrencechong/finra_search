@@ -220,7 +220,7 @@ class Finra
 
 	def self.to_csv (h)
 		require 'csv'
-		# CSV.open("data.csv", "wb") {|csv| h.to_a.each {|elem| csv << elem} }
+		CSV.open("data.csv", "wb") {|csv| h.to_a.each {|elem| csv << elem} }
 		# file = CSV.generate {|csv| h.to_a.each {|elem| csv << elem} }
 		# send_data file
 	end
