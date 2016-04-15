@@ -1,0 +1,29 @@
+$(function() {
+  $('#loading-indicator').hide();  // hide it initially.
+  $(document)  
+    .ajaxStart(function() {
+      $('#loading-indicator').show(); // show on any Ajax event.
+    	$('#search_results').hide()
+    })
+    .ajaxStop(function() {
+      $('#loading-indicator').hide(); // hide it when it is done.
+  		$('#search_results').show()
+  });
+});
+
+$('#search_results').html("<%= j render "result" %>")
+
+	
+
+
+
+
+var btns = document.querySelectorAll('.hash_button');
+
+Array.prototype.forEach.call(btns, function addClickListener(btn) {
+  btn.addEventListener('click', function(event) {
+  	debugger
+    // code here to handle click
+    alert("button1")
+  });
+});

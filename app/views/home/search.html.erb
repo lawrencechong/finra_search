@@ -1,0 +1,51 @@
+
+<% if !@result.nil? %>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Name</th>
+          <th>CAP</th>
+          <th>INCH</th>
+          <th>BOX TYPE</th>
+        </tr>
+      <thead>
+      <tbody>
+        <tr>
+          <td>CES-9000</td>
+          <td><%= @result[:name] %></td>
+          <td>9mm</td>
+          <td>1/2"</td>
+          <td>Kangal / Coil</td>
+        </tr>
+           <tr>
+          <td>CES-9000</td>
+          <td>50mt</td>
+          <td>9mm</td>
+          <td>1/2"</td>
+          <td>Kangal / Coil</td>
+        </tr>
+           <tr>
+          <td>CES-9000</td>
+          <td>50mt</td>
+          <td>9mm</td>
+          <td>1/2"</td>
+          <td>Kangal / Coil</td>
+        </tr>
+           <tr>
+          <td>CES-9000</td>
+          <td>50mt</td>
+          <td>9mm</td>
+          <td>1/2"</td>
+          <td>Kangal / Coil</td>
+        </tr>
+      </tbody>
+    <table/>
+
+<% else %>
+  <div class="no-result">
+    Couldn't find anything, search again...
+  </div>    
+  
+<% end %>

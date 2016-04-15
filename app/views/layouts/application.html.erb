@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Market76</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <%= favicon_link_tag 'favicon.ico' %>
+</head>
+<body>
+
+<header class='clearfix'>
+  <div class="left-nav">
+    <ul>
+    	<img src= "/assets/logo.png" style="width:120px;height:25px;" alt="Market76" >
+    </ul>
+  </div>
+  <div class="right-nav">
+    <ul>
+    	<li><a href="#">About</a></li>
+      <li><a href="#">Solutions</a>  
+         <span class="triangle"> ▼ </span>
+      </li>
+    	<li class="signup"><a href="#">Sign Up</a></li>
+    	<li class='login'><a href="#">Login</a></li>
+    </ul>
+  </div>
+</header>
+
+<%= yield %>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+
+
+<% if !@results.nil? and @results.count > 0 %>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Type</th>
+          <th></th>
+        </tr>
+      <thead>
+      <tbody>
+      <% @results.each { |result|  %>
+        <% if !result.nil? %>
+        <tr>
+          <td><%= result[:id] %></td>
+          <td><%= result[:name] %></td>
+          <td><%= result[:titles] %></td>
+          <td> 
+            <button class="hash_button"> Hash </button> 
+            <button class="csv_button"> CSV </button> 
+            <button class="save_button"> Save </button> 
+          </td>
+        </tr>
+        <% else %>
+          <tr>
+          <td>Missing</td>
+          <td>Missing</td>
+          <td>Missing</td>
+        </tr>
+        <% end %>
+        <% } %>
+
+
+      </tbody>
+    <table/>
+
+<% elsif @results.count == 0 %>
+  <div class="no-result">
+    Oops, that was an empty search. Try again.
+  </div>    
+  
+<% end %>

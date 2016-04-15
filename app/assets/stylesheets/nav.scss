@@ -1,0 +1,68 @@
+
+header {
+  background: #006699;
+  padding: 10px, 10px, 0px, 0px;
+  height: 60px;
+  margin-bottom: 20px;
+  color: #fff;
+  line-height: 65px;
+  position: relative;
+    font-size: 17px;
+    font-weight: 100;
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+a {
+    text-decoration: none;
+    color: white;
+  }
+
+li {
+    display: inline;
+    margin: 8px 8px 8px 8px ;
+  }
+}
+
+.signup {
+    color: #fff;
+    background-color: #49C35A;
+    border-color: #49C35A;
+    padding: 10px;
+    font-size: 13px;
+    border-radius: 9px;
+}
+
+.signup:hover {
+    color: #fff;
+    background-color: #36a345;
+    border-color: #339c42;
+}
+
+.login {
+  border-color: #e0e0e0;
+  border-width: 1px;
+  padding: 10px;
+  font-size: 13px;
+  border: 1px solid white;
+  border-radius: 9px;
+}
+
+.left-nav {
+  float: left;
+  margin-left: 100px
+}
+
+.right-nav {
+  float: right !important;
+  margin-right: 60px;
+  box-sizing: border-box;
+  font-family: "Oxygen", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.triangle {
+  font-size: 9px;
+}

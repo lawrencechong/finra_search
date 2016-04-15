@@ -1,0 +1,22 @@
+<div class = "title"> Search for financial professionals/firms </div>
+
+
+<%= form_tag("/search", method: "get", remote: true) do %>
+  
+  <%= text_field_tag "search", 
+  	nil, 
+  	:placeholder => "IARD/CRD Number", 
+  	:class=>"crd_num_search"
+  	%>
+
+  <%= submit_tag("Search", :class=>"search") %>
+
+<% end %>
+
+<div id="search_results"> </div>
+
+<div id="loading-indicator">
+	<img src="assets/loading.gif" alt="Loading" style="width:304px;height:228px;">
+</div>
+
+
